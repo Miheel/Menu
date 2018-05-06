@@ -14,11 +14,11 @@ public:
 
 private:
 	void draw(sf::RenderTarget &target, sf::RenderStates states)const;
-	int selectedInedx;
+	int selectedIndex;
 	float sizeX;
 	float sizeY;
 	float menuTime = 0.5f;
-	float menuTimeElaepd;
+	float menuTimeElapsed;
 
 	sf::Font font;
 	sf::Text menu[MENU_COUNT_INDEX];

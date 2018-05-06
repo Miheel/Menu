@@ -7,7 +7,7 @@ Menu::Menu(int sizeX, int sizeY)
 	{
 
 	}
-	this->selectedInedx = 0;
+	this->selectedIndex = 0;
 
 	for (int i = 0; i < MENU_COUNT_INDEX; i++)
 	{
@@ -26,10 +26,10 @@ Menu::~Menu()
 
 void Menu::update(float dt, sf::RenderTarget & target)
 {
-	//menuTimeElaepd = +dt;
-	//if (menuTimeElaepd >= menuTime)
+	//menuTimeElapsed = +dt;
+	//if (menuTimeElapsed >= menuTime)
 	//{
-	//	menuTimeElaepd = 0;
+	//	menuTimeElapsed = 0;
 	//if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 	//{
 	//	moveUp();
@@ -59,27 +59,27 @@ void Menu::update(float dt, sf::RenderTarget & target)
 
 void Menu::moveUp()
 {
-	if (selectedInedx - 1 >= 0)
+	if (selectedIndex - 1 >= 0)
 	{
-		menu[selectedInedx].setFillColor(sf::Color::White);
-		selectedInedx--;
-		menu[selectedInedx].setFillColor(sf::Color::Red);
+		menu[selectedIndex].setFillColor(sf::Color::White);
+		selectedIndex--;
+		menu[selectedIndex].setFillColor(sf::Color::Red);
 	}
 }
 
 void Menu::moveDown()
 {
-	if (selectedInedx + 1 < MENU_COUNT_INDEX)
+	if (selectedIndex + 1 < MENU_COUNT_INDEX)
 	{
-		menu[selectedInedx].setFillColor(sf::Color::White);
-		selectedInedx++;
-		menu[selectedInedx].setFillColor(sf::Color::Red);
+		menu[selectedIndex].setFillColor(sf::Color::White);
+		selectedIndex++;
+		menu[selectedIndex].setFillColor(sf::Color::Red);
 	}
 }
 
 int Menu::getSelectedMenu()
 {
-	return this->selectedInedx;
+	return this->selectedIndex;
 }
 
 void Menu::draw(sf::RenderTarget & target, sf::RenderStates states) const
