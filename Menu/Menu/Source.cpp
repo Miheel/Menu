@@ -20,12 +20,10 @@ int __stdcall WINAPI WinMain(HINSTANCE hInstance,		// HANDLE TO AN INSTANCE.  Th
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
-
-			if (event.type == sf::Event::Closed)
-				window.close();
 			switch (event.type)
 			{
 			case sf::Event::KeyPressed:
+
 				switch (event.key.code)
 				{
 				case sf::Keyboard::Up:
@@ -52,6 +50,7 @@ int __stdcall WINAPI WinMain(HINSTANCE hInstance,		// HANDLE TO AN INSTANCE.  Th
 					}
 					break;
 				}
+
 				break;
 			case sf::Event::Closed:
 				window.close();

@@ -6,7 +6,7 @@ Player::Player()
 	rect.setSize(sf::Vector2f(10, 10));
 	rect.setFillColor(sf::Color::White);
 	rect.setPosition(100, 100);
-	this->play = 1;
+	play = 1;
 }
 
 Player::~Player()
@@ -47,7 +47,7 @@ void Player::setplayingStatus(int play)
 
 int Player::getPlayingStatus()
 {
-	return this->play;
+	return play;
 }
 
 void Player::draw(sf::RenderTarget & target, sf::RenderStates states) const

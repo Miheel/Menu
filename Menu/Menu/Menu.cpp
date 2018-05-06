@@ -7,7 +7,7 @@ Menu::Menu(int sizeX, int sizeY)
 	{
 
 	}
-	this->selectedIndex = 0;
+	selectedIndex = 0;
 
 	for (int i = 0; i < MENU_COUNT_INDEX; i++)
 	{
@@ -79,7 +79,7 @@ void Menu::moveDown()
 
 int Menu::getSelectedMenu()
 {
-	return this->selectedIndex;
+	return selectedIndex;
 }
 
 void Menu::draw(sf::RenderTarget & target, sf::RenderStates states) const
