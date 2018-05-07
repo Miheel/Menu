@@ -59,7 +59,7 @@ void Menu::update(float dt, sf::RenderTarget & target)
 
 void Menu::moveUp()
 {
-	if (selectedIndex - 1 >= 0)
+	if (selectedIndex > 0)
 	{
 		menu[selectedIndex].setFillColor(sf::Color::White);
 		selectedIndex--;
