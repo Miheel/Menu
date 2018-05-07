@@ -15,8 +15,8 @@ public:
 private:
 	void draw(sf::RenderTarget &target, sf::RenderStates states)const;
 	int selectedIndex;
-	float sizeX;
-	float sizeY;
+	int sizeX;
+	int sizeY;
 	float menuTime = 0.5f;
 	float menuTimeElapsed;
 

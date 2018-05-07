@@ -34,7 +34,7 @@ void Player::update(float dt, sf::RenderTarget & target)
 	}
 	rect.move(move*direction*dt);
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape));
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
 	{
 		setplayingStatus(0);
 	}
